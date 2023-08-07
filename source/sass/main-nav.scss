@@ -1,0 +1,32 @@
+.main-nav__list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.main-nav__toggle {
+  @include common-button;
+  width: 24px;
+  height: 24px;
+  background-image: linear-gradient(to bottom, var(--secondary-decor) 2px, var(--primary-decor) 2px, var(--primary-decor) 4px, var(--secondary-decor) 4px, var(--secondary-decor) 10px,
+  var(--primary-decor) 10px, var(--primary-decor) 12px, var(--secondary-decor) 12px, var(--secondary-decor) 18px, var(--primary-decor) 18px, var(--primary-decor) 20px, var(--secondary-decor) 20px);
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__toggle--on {
+  background-image:
+    linear-gradient(45deg, var(--secondary-decor) 1px, transparent 1px),
+    linear-gradient(135deg, var(--secondary-decor) 1px, transparent 1px),
+    linear-gradient(225deg, var(--secondary-decor) 1px, transparent 1px),
+    linear-gradient(315deg, var(--secondary-decor) 1px, transparent 1px),
+    linear-gradient(45deg, transparent 16px, var(--primary-decor) 16px, var(--primary-decor) 18px, transparent 18px),
+    linear-gradient(135deg, var(--secondary-decor) 16px, var(--primary-decor) 16px, var(--primary-decor) 18px, var(--secondary-decor) 18px);
+}
+
