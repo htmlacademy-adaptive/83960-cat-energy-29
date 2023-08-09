@@ -1,0 +1,38 @@
+// @use "../mixin.scss";
+
+.contacts__wrapper {
+  padding: 20px 26px;
+  display: flex;
+}
+
+.contacts__invitation {
+  margin: 0;
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  color: var(--additional-text-color);
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.contacts__image {
+  @include common-image;
+  width: 100%;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__image--pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

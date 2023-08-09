@@ -1,0 +1,15 @@
+// @use "../mixin.scss";
+
+.features-list__item {
+  display: flex;
+}
+
+.features-list__key {
+  margin: 0;
+  padding: 0;
+}
+
+.features-list__value {
+  margin: 0;
+  padding: 0;
+}

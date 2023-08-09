@@ -20,7 +20,7 @@
 
   //Status colors
   --status-color: #5eaa2f;
-  --status-color: #ebebeb;
+  --status-color-2: #ebebeb;
   --special-grey: #cdcdcd;
   --status-error: #ff8282;
 
@@ -53,8 +53,8 @@
   font-style: normal;
   font-size: 20px;
   line-height: 20px;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
   box-sizing: border-box;
 }
 
@@ -68,15 +68,6 @@
 .page__body {
   min-width: 320px;
   margin: 0 auto;
-}
-
-.page-title {
-  margin: 0;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: #ffffff;
-  text-align: center;
 }
 
 .visually-hidden {

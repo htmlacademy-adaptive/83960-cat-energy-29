@@ -1,3 +1,5 @@
+// @use "../mixin.scss";
+
 .site-list {
   @include reset-list;
 }

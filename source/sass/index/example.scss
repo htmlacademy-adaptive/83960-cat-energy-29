@@ -1,0 +1,48 @@
+// @use "../mixin.scss";
+
+.example {
+  background-color: #eaeaea;
+  padding: 25px 20px 40px 20px;
+}
+
+.example__text {
+  margin: 0;
+  color: var(--additional-text-color);
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__list {
+  @include reset-list;
+}
+
+.example__value {
+  color: var(--primary-text-color);
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__description {
+  margin: 0;
+  color: var(--additional-text-color);
+  font-family: var(--secondary-font);
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.example__cost {
+  color: var(--primary-text-color);
+  font-family: var(--primary-font);
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.slider__image {
+  @include common-image;
+}

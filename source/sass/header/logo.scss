@@ -1,0 +1,37 @@
+// @use "../mixin.scss";
+
+.logo-pic {
+  display: block;
+
+  img {
+    @include common-image;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo-text {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  display: block;
+
+  img {
+    @include common-image;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

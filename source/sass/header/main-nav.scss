@@ -1,20 +1,38 @@
+// @use "../mixin.scss";
+
 .main-nav__list {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    position: static;
+  }
+}
+
+.main-nav__list--on {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__toggle {
   @include common-button;
   width: 24px;
   height: 24px;
-  background-image: linear-gradient(to bottom, var(--secondary-decor) 2px, var(--primary-decor) 2px, var(--primary-decor) 4px, var(--secondary-decor) 4px, var(--secondary-decor) 10px,
-  var(--primary-decor) 10px, var(--primary-decor) 12px, var(--secondary-decor) 12px, var(--secondary-decor) 18px, var(--primary-decor) 18px, var(--primary-decor) 20px, var(--secondary-decor) 20px);
+  background-image: linear-gradient(to bottom, var(--secondary-decor) 2px, var(--primary-decor) 2px, var(--primary-decor) 4px, var(--secondary-decor) 4px, var(--secondary-decor) 10px, var(--primary-decor) 10px, var(--primary-decor) 12px, var(--secondary-decor) 12px, var(--secondary-decor) 18px, var(--primary-decor) 18px, var(--primary-decor) 20px, var(--secondary-decor) 20px);
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
   &:hover {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -29,4 +47,3 @@
     linear-gradient(45deg, transparent 16px, var(--primary-decor) 16px, var(--primary-decor) 18px, transparent 18px),
     linear-gradient(135deg, var(--secondary-decor) 16px, var(--primary-decor) 16px, var(--primary-decor) 18px, var(--secondary-decor) 18px);
 }
-

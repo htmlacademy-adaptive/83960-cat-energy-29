@@ -1,0 +1,10 @@
+// @use "../mixin.scss";
+
+.goods {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.goods__list {
+  @include reset-list;
+}
