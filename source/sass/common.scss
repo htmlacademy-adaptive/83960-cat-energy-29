@@ -91,6 +91,13 @@
   color: inherit;
 }
 
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .visually-hidden {
   clip-path: inset(50%);
   height: 1px;

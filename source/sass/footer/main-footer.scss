@@ -1,0 +1,29 @@
+.main-footer {
+  --footer-logo-color: #111111;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--additional-background-color);
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-footer__logo-link {
+  padding: 20px 0;
+
+  &:hover {
+    --footer-logo-color: #3e3e3e;
+  }
+
+  &:active {
+    --footer-logo-color: #6b6b6b;
+  }
+}
+
+.main-footer__logo-char {
+  fill: var(--footer-logo-color);
+}
