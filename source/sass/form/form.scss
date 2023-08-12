@@ -8,3 +8,14 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+.form__button {
+  padding: 14px 44px;
+  width: 100%;
+}
+
+.form__footnote {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  line-height: 16px;
+}

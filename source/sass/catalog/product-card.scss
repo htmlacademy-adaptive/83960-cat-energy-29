@@ -24,25 +24,32 @@
   color: var(--decor-color-3);
 }
 
-.product-card__features {
-  @include reset-list;
-  color: var(--additional-text-color);
-  font-family: var(--secondary-font);
-  font-size: 12px;
+.product-card__title--extra {
   line-height: 16px;
 }
 
 .product-card__button {
-  @include common-button;
-  display: block;
-  color: var(--secondary-text-color);
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: var(--secondary-background-color);
+  padding: 10px 0;
+  width: 100%;
+
+  &:hover {
+    background-color: var(--status-color);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .product-card__button--more {
   background-color: var(--additional-background-color);
   color: var(--additional-text-color);
+
+  &:hover {
+    background-color: var(--status-color-2);
+  }
+
+  &:active {
+    color: rgba(44, 44, 44, 0.3);
+  }
 }

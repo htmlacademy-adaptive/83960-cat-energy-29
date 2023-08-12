@@ -27,18 +27,3 @@
   line-height: 18px;
   text-transform: uppercase;
 }
-
-.form__button {
-  @include common-button;
-  color: var(--secondary-text-color);
-  background-color: var(--secondary-background-color);
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.form__footnote {
-  font-family: var(--secondary-font);
-  font-size: 14px;
-  line-height: 16px;
-}

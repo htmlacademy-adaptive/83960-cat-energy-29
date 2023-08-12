@@ -1,5 +1,18 @@
 // @use "../mixin.scss";
 
+.features-list {
+  @include reset-list;
+  color: var(--additional-text-color);
+  font-family: var(--secondary-font);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.features-list--extra {
+  font-size: 14px;
+  line-height: 14px;
+}
+
 .features-list__item {
   display: flex;
 }
