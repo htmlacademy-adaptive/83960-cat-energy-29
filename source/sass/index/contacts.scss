@@ -1,16 +1,46 @@
 // @use "../mixin.scss";
+.contacts {
+  position: relative;
+}
 
 .contacts__wrapper {
   padding: 20px 26px;
   display: flex;
+  justify-content: space-between;
+  gap: 20%;
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 70px;
+    gap: 50%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 60px 80px;
+    width: 40%;
+    position: absolute;
+    gap: 20%;
+    left: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .contacts__invitation {
   margin: 0;
-  color: #111111;
+  color: var(--decor-color-3);
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 50%;
+
+  span {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__address {
@@ -19,20 +49,28 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    align-items: flex-end;
+    .contacts__street {
+      text-align: right;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    align-items: flex-start;
+    .contacts__street {
+      text-align: left;
+    }
+  }
 }
 
 .contacts__image {
-  @include common-image;
   width: 100%;
-}
-
-.contacts__map {
-  position: relative;
-}
-
-.contacts__image--pin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }

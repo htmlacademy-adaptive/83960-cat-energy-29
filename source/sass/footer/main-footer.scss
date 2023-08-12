@@ -1,5 +1,5 @@
 .main-footer {
-  --footer-logo-color: #111111;
+  --footer-logo-color: var(--decor-color-3);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -7,8 +7,14 @@
   background-color: var(--additional-background-color);
 
   @media screen and (min-width: 768px) {
+    padding: 55px 30px;
     flex-direction: row;
     justify-content: space-between;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 66px 110px;
   }
 }
 
@@ -22,8 +28,61 @@
   &:active {
     --footer-logo-color: #6b6b6b;
   }
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .main-footer__logo-char {
   fill: var(--footer-logo-color);
+}
+
+.main-footer__partner {
+  --before-color: var(--decor-color);
+  --after-color: var(--decor-color-2);
+  padding: 20px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 113px;
+    height: 20px;
+    background-color: var(--before-color);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-image: url("../../img/logos/academy-logo-text.svg");
+  }
+
+  &::after {
+      display: block;
+      content: "";
+      width: 27px;
+      height: 34px;
+      background-color: var(--after-color);
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-image: url("../../img/logos/academy-logo-image.svg");
+  }
+
+  &:hover,
+  &:focus {
+    --after-color: var(--secondary-background-color);
+  }
+
+  &:active {
+    --before-color: rgba(68, 68, 68, 0.3);
+    --after-color: rgba(104, 183, 56, 0.3);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    width: auto;
+    justify-content: flex-end;
+    gap: 23px;
+  }
 }
