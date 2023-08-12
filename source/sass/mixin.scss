@@ -4,7 +4,7 @@
   list-style-type: none;
 }
 
-@mixin common-button {
+/* @mixin common-button {
   appearance: none;
   margin: 0;
   padding: 0;
@@ -13,8 +13,9 @@
   font-family: inherit;
   cursor: pointer;
 }
+ */
 
-@mixin common-link {
+ @mixin common-link {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
