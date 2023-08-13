@@ -1,0 +1,27 @@
+.slider {
+  position: relative;
+  width: 280px;
+  height: 256px;
+  outline: 1px solid black;
+}
+
+.slider__image {
+  max-width: none;
+}
+
+.slider__wrapper {
+  position: absolute;
+  overflow: hidden;
+}
+
+.slider__wrapper--before {
+  width: -19px;
+}
+
+.slider__curtain {
+  --offset: 0px;
+  position: absolute;
+  cursor: pointer;
+  transform: translateX(var(--offset));
+  background-color: transparent;
+}
