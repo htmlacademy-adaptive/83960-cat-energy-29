@@ -1,12 +1,10 @@
 .slider {
   position: relative;
-  width: 280px;
-  height: 256px;
-  outline: 1px solid black;
 }
 
 .slider__image {
   max-width: none;
+  user-select: none;
 }
 
 .slider__wrapper {
@@ -15,7 +13,7 @@
 }
 
 .slider__wrapper--before {
-  width: -19px;
+  width: 0;
 }
 
 .slider__curtain {

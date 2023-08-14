@@ -10,7 +10,7 @@ curtain.onmousedown = function (event) {
   startX = event.pageX - translateX;
 }
 
-curtain.onmouseup = function (event) {
+document.body.onmouseup = function (event) {
   moved = false;
 }
 
@@ -21,5 +21,3 @@ document.body.onmousemove = function (event) {
   curtain.style.setProperty('--offset', event.pageX - startX + 'px');
   before.style.setProperty('width', offset + 19 + 'px');
 }
-
-

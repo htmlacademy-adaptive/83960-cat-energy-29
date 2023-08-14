@@ -59,14 +59,14 @@
   }
 
   &::after {
-      display: block;
-      content: "";
-      width: 27px;
-      height: 34px;
-      background-color: var(--after-color);
-      mask-repeat: no-repeat;
-      mask-position: center;
-      mask-image: url("../../img/logos/academy-logo-image.svg");
+    display: block;
+    content: "";
+    width: 27px;
+    height: 34px;
+    background-color: var(--after-color);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-image: url("../../img/logos/academy-logo-image.svg");
   }
 
   &:hover,

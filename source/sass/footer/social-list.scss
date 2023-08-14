@@ -18,7 +18,7 @@
 .social-list__link {
   --social-color: var(--decor-color-2);
 
-  &:before {
+  &::before {
     display: block;
     content: "";
     width: 28px;
@@ -34,24 +34,24 @@
   }
 
   &:active {
-    --social-color: rgba(104, 183, 56, 0.3)
+    --social-color: rgba(104, 183, 56, 0.3);
   }
 }
 
 .social-list__link--vkontakte {
-  &:before {
-    mask-image: url(../../img/social/vkontakte.svg);
+  &::before {
+    mask-image: url("../../img/social/vkontakte.svg");
   }
 }
 
 .social-list__link--youtube {
-  &:before {
-    mask-image: url(../../img/social/youtube.svg);
+  &::before {
+    mask-image: url("../../img/social/youtube.svg");
   }
 }
 
 .social-list__link--telegram {
-  &:before {
-    mask-image: url(../../img/social/telegram.svg);
+  &::before {
+    mask-image: url("../../img/social/telegram.svg");
   }
 }
