@@ -1,7 +1,15 @@
 // @use "../mixin.scss";
 
 .how-work {
-  padding: 20px 20px 50px 20px;
+  padding: 0 20px 50px 20px;
+}
+
+.how-work__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
 }
 
 .how-work__list {
@@ -10,7 +18,115 @@
   font-size: 14px;
   line-height: 18px;
   color: var(--additional-text-color);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
+}
+
+.how-work__item {
+  display: grid;
+  grid-template-columns: 60px auto;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+
+  &::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-color: var(--secondary-background-color);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.how-work__item--composition {
+  &::before {
+    background-image: url("../../img/composition.svg");
+  }
+}
+
+.how-work__item--cooking {
+  &::before {
+    background-image: url("../../img/cooking.svg");
+  }
+}
+
+.how-work__item--eating {
+  &::before {
+    background-image: url("../../img/eating.svg");
+  }
+}
+
+.how-work__item--period {
+  &::before {
+    background-image: url("../../img/period.svg");
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .how-work {
+    padding: 45px 30px 104px 30px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .how-work__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+
+  .how-work__list {
+    font-size: 16px;
+    line-height: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20%;
+    row-gap: 137px;
+    counter-reset: item-no;
+  }
+
+  .how-work__item {
+    width: 85%;
+    grid-template-columns: 1fr;
+    row-gap: 31px;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      display: block;
+      counter-increment: item-no;
+      content: counter(item-no);
+      font-family: var(--primary-font);
+      font-size: 280px;
+      line-height: 280px;
+      color: var(--additional-background-color);
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .how-work {
+    padding: 71px 110px 126px 110px;
+    border: 0;
+  }
+
+  .how-work__list {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5%;
+    counter-reset: item-no;
+  }
+
+  .how-work__item {
+    width: 100%;
+  }
 }
