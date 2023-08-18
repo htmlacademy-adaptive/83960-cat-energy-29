@@ -29,8 +29,8 @@
 
 .programs__item--slim {
   --cat-background: url("../../img/cat-slim.svg");
-    grid-template-columns: 50px auto;
-    padding-top: 21px;
+  grid-template-columns: 50px auto;
+  padding-top: 21px;
 
   &::before {
     background-position: center bottom 3px, center;
@@ -41,8 +41,8 @@
 
 .programs__item--pro {
   --cat-background: url("../../img/cat-pro.svg");
-    grid-template-columns: 67px auto;
-    padding-top: 24px;
+  grid-template-columns: 67px auto;
+  padding-top: 24px;
 
   &::before {
     background-position: center;
@@ -214,9 +214,9 @@
 
   .programs__item--slim {
     --cat-background: url("../../img/cat-slim.svg");
-      grid-template-columns: 100px auto;
-      padding-top: 41px;
-      padding-right: 61px;
+    grid-template-columns: 100px auto;
+    padding-top: 41px;
+    padding-right: 61px;
 
     &::before {
       background-position: center bottom 9px, center;
@@ -227,9 +227,9 @@
 
   .programs__item--pro {
     --cat-background: url("../../img/cat-pro.svg");
-      grid-template-columns: 134px auto;
-      padding-top: 47px;
-      padding-right: 67px;
+    grid-template-columns: 134px auto;
+    padding-top: 47px;
+    padding-right: 67px;
 
     &::before {
       background-position: center;
