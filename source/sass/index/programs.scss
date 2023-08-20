@@ -1,7 +1,7 @@
 // @use "../mixin.scss";
 
 .programs {
-  padding: 0 20px;
+  padding: 20px 20px 0;
 }
 
 .programs__list {
@@ -183,7 +183,7 @@
 
 @media screen and (min-width: 1440px) {
   .programs {
-    padding: 0 110px;
+    padding: 82px 110px 0;
   }
 
   .programs__list {

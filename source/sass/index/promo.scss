@@ -41,6 +41,14 @@
   background-color: var(--secondary-background-color);
   color: var(--secondary-text-color);
   text-align: center;
+
+  &:hover {
+    background-color: var(--status-color);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -58,7 +66,7 @@
     color: var(--primary-text-color);
     text-align: left;
     margin-bottom: 40px;
-    width: 55%;
+    width: 60%;
     margin-left: 90px;
   }
 
@@ -75,6 +83,9 @@
     position: absolute;
     bottom: 0;
     z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
   }
 
   .promo__link {
@@ -109,6 +120,7 @@
   .promo__image {
     left: 37%;
     top: 20%;
+    transform: none;
   }
 
   .promo__link {
