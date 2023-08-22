@@ -13,12 +13,10 @@
 }
 
 .how-work__list {
-  @include reset-list;
   font-family: var(--secondary-font);
   font-size: 14px;
   line-height: 18px;
   color: var(--additional-text-color);
-  display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }

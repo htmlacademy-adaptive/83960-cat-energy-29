@@ -9,16 +9,6 @@
   padding: 27px 20px 0;
 }
 
-.promo__title {
-  margin: 0;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: var(--secondary-text-color);
-  text-align: center;
-  margin-bottom: 25px;
-}
-
 .promo__slogan {
   margin: 0;
   font-size: 14px;
@@ -60,16 +50,6 @@
     z-index: 0;
   }
 
-  .promo__title {
-    font-size: 60px;
-    line-height: 60px;
-    color: var(--primary-text-color);
-    text-align: left;
-    margin-bottom: 40px;
-    width: 60%;
-    margin-left: 90px;
-  }
-
   .promo__slogan {
     font-size: 20px;
     line-height: 20px;
@@ -105,11 +85,6 @@
     background-position: top right;
     background-size: cover, 50% auto;
     min-height: 700px;
-  }
-
-  .promo__title {
-    width: 40%;
-    margin-left: 80px;
   }
 
   .promo__slogan {

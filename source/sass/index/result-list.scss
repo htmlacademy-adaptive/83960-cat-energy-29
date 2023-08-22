@@ -1,6 +1,4 @@
 .result-list {
-  @include reset-list;
-  display: flex;
   justify-content: space-between;
   gap: 15%;
 }
