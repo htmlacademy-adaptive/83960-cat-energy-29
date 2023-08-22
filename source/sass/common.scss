@@ -104,6 +104,36 @@
   object-fit: contain;
 }
 
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.flexlist {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.deflist {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  dt {
+    margin: 0;
+    padding: 0;
+  }
+
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
 .visually-hidden {
   clip-path: inset(50%);
   height: 1px;

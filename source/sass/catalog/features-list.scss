@@ -1,20 +1,19 @@
 // @use "../mixin.scss";
 
 .features-list {
-  @include reset-list;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   color: var(--additional-text-color);
   font-family: var(--secondary-font);
   font-size: 12px;
   line-height: 16px;
 }
 
-.features-list--extra {
-  font-size: 14px;
-  line-height: 14px;
-}
-
 .features-list__item {
   display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .features-list__key {

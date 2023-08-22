@@ -76,3 +76,11 @@
 .contacts__image {
   width: 100%;
 }
+
+.contacts--catalog {
+  background-color: var(--additional-background-color);
+
+  @media screen and (min-width: 1440px) {
+    background-color: var(--primary-background-color);
+  }
+}
