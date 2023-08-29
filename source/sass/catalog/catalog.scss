@@ -1,8 +1,49 @@
-.catalog-title {
-  margin: 0;
-  padding: 27px 20px 41px;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  border-top: 1px solid #d9d9d9;
+.main-header--catalog {
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 27px;
+}
+
+.page__title--catalog {
+  padding: 0 20px;
+  margin-bottom: 41px;
+}
+
+.goods {
+  margin-bottom: 25px;
+}
+
+.goods--extra {
+  margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header--catalog {
+    padding: 25px 30px 0;
+    border: none;
+    margin-bottom: 65px;
+  }
+
+  .page__title--catalog {
+    padding: 0 30px;
+    margin-bottom: 84px;
+  }
+
+  .goods {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-header--catalog {
+    padding: 55px 110px 0;
+    margin-bottom: 74px;
+  }
+
+  .page__title--catalog {
+    padding: 0 110px;
+  }
+
+  .goods {
+    margin-bottom: 76px;
+  }
 }

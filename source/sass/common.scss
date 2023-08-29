@@ -129,12 +129,12 @@
   padding: 0;
   list-style-type: none;
 
-  dt {
+  .key {
     margin: 0;
     padding: 0;
   }
 
-  dd {
+  .value {
     margin: 0;
     padding: 0;
   }
@@ -158,9 +158,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .promo__title {
+  .page__title {
     font-size: 60px;
     line-height: 60px;
   }
 }
-
