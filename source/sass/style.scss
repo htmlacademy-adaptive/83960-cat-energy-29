@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+@import "./common.scss";
+@import "./header/main-header.scss";
+@import "./header/main-nav.scss";
+@import "./index/index.scss";
+@import "./index/promo.scss";
+@import "./index/programs.scss";
+@import "./index/how-work.scss";
+@import "./index/example.scss";
+@import "./index/result-list.scss";
+@import "./index/slider.scss";
+@import "./index/contacts.scss";
+@import "./form/form.scss";
+@import "./form/fieldset.scss";
+@import "./catalog/catalog.scss";
+@import "./catalog/goods.scss";
+@import "./catalog/extra.scss";
+@import "./catalog/extra-card.scss";
+// @import "./catalog/features-list.scss";
+@import "./catalog/product-card.scss";
+@import "./catalog/gift.scss";
+@import "./footer/main-footer.scss";
+@import "./footer/social-list.scss";

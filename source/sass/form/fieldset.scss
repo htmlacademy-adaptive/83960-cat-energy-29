@@ -1,0 +1,29 @@
+// @use "../mixin.scss";
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.fieldset__legend {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.input-label {
+  display: flex;
+  color: var(--additional-text-color);
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.input-text {
+  color: var(--additional-text-color);
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}

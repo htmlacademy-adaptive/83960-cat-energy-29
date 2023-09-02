@@ -1,0 +1,25 @@
+.slider {
+  position: relative;
+}
+
+.slider__image {
+  max-width: none;
+  user-select: none;
+}
+
+.slider__wrapper {
+  position: absolute;
+  overflow: hidden;
+}
+
+.slider__wrapper--before {
+  width: 0;
+}
+
+.slider__curtain {
+  --offset: 0px;
+  position: absolute;
+  cursor: pointer;
+  transform: translateX(var(--offset));
+  background-color: transparent;
+}
