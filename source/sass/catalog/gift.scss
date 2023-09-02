@@ -1,15 +1,12 @@
 .gift {
-  padding: 0 20px;
-}
-
-.gift__wrapper {
   padding: 58px 20px 43px;
   background-color: transparent;
   background-image:
     linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("../../img/catalog/gift-background-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,10 +26,41 @@
 
 .gift__description {
   margin: 0;
-  width: 70%;
   color: var(--secondary-text-color);
   font-family: var(--secondary-font);
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .gift {
+    flex-direction: row;
+    justify-content: space-between;
+    background-size: cover;
+    padding: 57px 125px 60px 77px;
+
+    &::before {
+      width: 80px;
+      height: 82px;
+    }
+  }
+
+  .gift__description {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gift {
+    flex-direction: column;
+    width: 20%;
+    padding: 56px 40px 43px;
+    // justify-content: space-between;
+    // background-size: cover;
+    // padding: 57px 125px 60px 77px;
+  }
 }
